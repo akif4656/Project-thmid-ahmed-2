@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-image:url(unsplash.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+  position: relative;
+  margin: auto;
+  padding-top: 20px;  
+ 
+}
+.container::before{
+    content: '';
+    background-image: url(akif.jpg);
+    width: 500px;
+    height: 485px;
+    position: absolute;
+    top: 170px;
+    left: 0px;
+    bottom: 0;
+    border-radius: 50%;
+   opacity: 0.7;
+    background-size: cover;
+    margin-left: -35px;
+}
+header{
+    width: 100%;
+    height: 15vh;
+   
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    padding-top: 20px;
+   align-items: center;
+ 
+}
+
+.logo{
+    color: wheat;
+    font-style: italic;
+    padding-top: 10px;
+    letter-spacing: 6px;
+    font-size: 3rem;
+    
+}
+.logo h1{
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 25px;
+}
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 2px;
+    background-color: black;
+    border-radius: 25px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin: 0 2px;
+}
+.menu ul li:hover{
+    opacity: 0.5;
+    transition: 0.4s;
+}
+.menu{
+
+}
+.btn{
+background-color: blue;
+font-weight: 300;
+font-size: 25px;
+padding: 13px 25px;
+color: white;
+border-radius: 30px;
+transition: 0.4s;
+   
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+    
+    
+}
+.btn:hover{
+    background-color: rgb(4, 4, 92);
+}
+main{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position:absolute;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+main h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+main h3{
+    font-size: 30px;
+    font-weight: 400;
+    position: relative;
+}
+main h3::before{
+    content: '';
+    width: 55px;
+    height: 3px;
+    background-color: white;
+    position:absolute;
+    top: 17px;
+    left: -4px;
+    bottom: 0;
+}
